@@ -37,7 +37,32 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  print_statistics(test,SIZE);
 
 }
 
 /* Add other Implementation File Code Here */
+void print_array(unsigned char *values,int n){
+}
+
+void print_statistics(unsigned char *values,int n){
+}
+
+void sort_array(unsigned char *values,int n){
+}
+
+unsigned char find_median(unsigned char *values,int n){
+  return 1;
+}
+
+unsigned char find_mean(unsigned char *values,int n){
+  return 1;
+}
+
+unsigned char find_maximum(unsigned char *values,int n){
+  return 1;
+}
+
+unsigned char find_minimum(unsigned char *values,int n){
+  return 1;
+}

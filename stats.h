@@ -9,10 +9,10 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief fuctions that return common stats  
  *
- * <Add Extended Description Here>
+ * code will have fuctions for sort,median,mean,maximum,minimum, and sort.
  *
  * @author <Add FirsName LastName>
  * @date <Add date >
@@ -21,20 +21,103 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief prints basics stats about an array
+ *
+ * the print_statistics fuctions takes in an unsigned
+ * char char array and prints the minimum,maximum,mean 
+ * and median values. 
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ *
+ * @return void this prints the values to stdout
+ */
+void print_statistics(unsigned char *values,int n);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief prints the elements in an array
  *
- * <Add Extended Description Here>
+ * the print_array fuction takes prints each element
+ * of an unsigned char array to stdout
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return void this prints the values to stdout
  */
+void print_array(unsigned char *values,int n);
+
+/**
+ * @brief sorts the array in desending order
+ *
+ * sorts the array using quick sort
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return void this simply modifies the array in place
+ */
+void sort_array(unsigned char *values,int n);
+
+/**
+ * @brief return s the median of an array
+ *
+ * this function either returns the middle element
+ * if array size is odd or the the aveage of 
+ * the middle two elements if even. It will round
+ * down the answer if its not a whole number 
+ *
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return unsigned char median value
+ */
+unsigned char find_median(unsigned char *values,int n);
+
+/**
+ * @brief returns the average value of an array
+ * 
+ * this function returns the average value if
+ * the size is 0 then in returns 0. It will round
+ * down the answer if its not a whole number
+ *
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return unsigned char mean value
+ */
+unsigned char find_mean(unsigned char *values,int n);
+
+/**
+ * @brief return the maximum value in the array
+ *
+ * this funcion goes  through the whole arary
+ * and find the largest value. it does not
+ * presume the array is sorted in any way
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return unsigned char maximum value 
+ */
+unsigned char find_maximum(unsigned char *values,int n);
+
+/**
+ * @brief return the minimum value in the array
+ *
+ * this funcion goes  through the whole arary
+ * and find the smallest value. it does not
+ * presume the array is sorted in any way 
+ *
+ * @param values is a unsigned char array
+ * @param n is the size of the array
+ * 
+ * @return unsigned char minimum value
+ */
+unsigned char find_minimum(unsigned char *values,int n);
 
 
 #endif /* __STATS_H__ */
