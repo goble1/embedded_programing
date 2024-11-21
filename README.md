@@ -1,4 +1,4 @@
-Author: Craig Goble
+Author: Craig A Goble 
 Date: 4/26/2020
     main() - The main entry point for your program
     print_statistics() - A function that prints the statistics of an array including minimum, maximum, mean, and median.
